@@ -12,7 +12,7 @@
     NOTE: Before proceeding make sure that the Laptop/Desktop and the android phone are connected to same WiFi/Hotspot.
 
     1. Navigate to the WirelessX_Source_Code/WirelessX-Python-Server directory and run the Wireless-X server using the following command:
-            $ python3 Wireless-X_server.py
+            $ python3 rtrw_server.py
     
     2. Enter your linux system password (the same password you enter while executing a command as "sudo"). This is required in order to set up the virtual webcam device.               
 
@@ -28,7 +28,8 @@
 
         e. Now you would be able to use this virtual webcam device on Google Chrome for video conferencing. (Tested on Google Chrome for Microsoft Teams and Google Meet).
 
-        f. (Optional) Inorder to test if camera frames are received to the Laptop/ Desktop, use the below command while (Note: camera option should be turned on in the 
-            Wireless-X apk on Android):
-                $ ffplay /dev/video20 
+        f. Inorder to test if camera frames are received to the Laptop/ Desktop, use the below command while (Note: camera option should be turned on in the Wireless-X apk on Android):
+                $ ffplay /dev/video4 
+                
+        g. Using Virtual camera in Browser: Select 'RTRW' camera in browser camera setting after following above all steps.
 

@@ -23,7 +23,7 @@ from pynput.mouse import Button, Controller as MouseController
 
 ## Creates a virtual camera on the laptop/PC
 virtualCamera = subprocess.run(
-    ["sudo", "modprobe", "v4l2loopback", "devices=1", "video_nr=2", "card_label='RTRW Camera'", "exclusive_caps=1"])
+    ["sudo", "modprobe", "v4l2loopback", "devices=1", "video_nr=5", "card_label='RTRW Camera'", "exclusive_caps=1"])
 
 ## @var width
 # Stores the width of the screen
@@ -61,7 +61,7 @@ img_width = 720
 img_height = 480
 
 ## Virtual webcam device
-camera = pyfakewebcam.FakeWebcam('/dev/video2', img_width, img_height)
+camera = pyfakewebcam.FakeWebcam('/dev/video4', img_width, img_height)
 
 ## The camera and keyboard-mouse sockets receive user requests until this variable is set to 'True'
 thread_run = True
