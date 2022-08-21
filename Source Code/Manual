@@ -1,0 +1,34 @@
+## Installation Setup
+
+    1. Make sure that you are in the RTRW directory (where install.sh file is present)
+
+    2. Grant the permission to execute install.sh installation script using the following command:
+            $ sudo chmod a+x install.sh
+
+    3. Execute the install.sh script to install the necessary dependencies using the following command:
+            $ sudo ./install.sh
+
+## Running the application
+    NOTE: Before proceeding make sure that the Laptop/Desktop and the android phone are connected to same WiFi/Hotspot.
+
+    1. Navigate to the WirelessX_Source_Code/WirelessX-Python-Server directory and run the Wireless-X server using the following command:
+            $ python3 Wireless-X_server.py
+    
+    2. Enter your linux system password (the same password you enter while executing a command as "sudo"). This is required in order to set up the virtual webcam device.               
+
+    3. Application Installation and Setup on Android Smartphone:
+
+        a. Install the Wireless-X apk (you can copy the apk from the folder WirelessX_Source to your smartphone) on Android smartphone and give required permissions.
+
+        b. Now, enter the IP address displayed in the terminal (on which the server is running) into the android application.
+        
+        c. Click on Test Button to test the connection of smartphone with the server. If failed, Recheck if you have entered correct IP address of Laptop/ Desktop (on which the server is running).
+
+        d. After successful connection, you would be able to control mouse, keyboard of laptop and use smartphones camera as webcam for the laptop/Desktop.
+
+        e. Now you would be able to use this virtual webcam device on Google Chrome for video conferencing. (Tested on Google Chrome for Microsoft Teams and Google Meet).
+
+        f. (Optional) Inorder to test if camera frames are received to the Laptop/ Desktop, use the below command while (Note: camera option should be turned on in the 
+            Wireless-X apk on Android):
+                $ ffplay /dev/video20 
+
